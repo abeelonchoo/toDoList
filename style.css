@@ -25,6 +25,7 @@ img{
     width: 200px;
     transform: rotate(-15deg);
     display: block;
+  gap: 10px;
 }
 
 @font-face {

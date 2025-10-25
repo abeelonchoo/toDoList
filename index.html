@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fondo">
+        <img src="discos.png" width="200px" height="200px">
+        <h1>To-Do List</h1>
+         <button id="botoncito" onclick="crearInput()">Añadir tarea.</button> 
+         <div id="contenedor-inputs"></div>
+        
+        </div>    
+
+        <script>
+            function crearInput() {
+                  const contenedor = document.createElement('div');
+        contenedor.className = 'tarea-item';
+        
+                const nuevoInput = document.createElement('input');
+                nuevoInput.type = 'text';
+                nuevoInput.placeholder='Introduce tu tarea.';
+                 nuevoInput.className = 'input-tarea';
+
+                 const checkbox = document.createElement('input');
+                 checkbox.type = 'checkbox';
+                 checkbox.className = 'checkbox-tarea';
+
+                  contenedor.appendChild(checkbox);
+    contenedor.appendChild(nuevoInput);
+
+            document.getElementById('contenedor-inputs').appendChild(contenedor);
+    
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-color: #f4f2ef;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fondo {
+     overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f4dbdb;
+    border: 3px solid #e6c0c0;
+    border-radius: 30px;
+    width: 30vw;
+    max-height: 80vh;
+    min-height: 80vh;
+}
+
+img{
+    
+    width: 200px;
+    transform: rotate(-15deg);
+    display: block;
+}
+
+@font-face {
+    font-family:"Pixellari";
+    src: url("Pixellari.ttf")
+}
+
+h1{
+    font-family: Pixellari, sans-serif;
+    color: #cd4662;
+   text-align: right;
+   margin-right:30px;
+   margin-top: -130px;
+   font-size: 40px;
+}
+#botoncito{
+    margin-top: -80px;
+    background-color: #cae2df;
+    border-color: #afd7d3 ;
+  margin-left:60%;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  
+}
+
+
+input::placeholder{
+    color: #8ba35f;;
+}
+
+#contenedor-inputs {
+    margin-top: 10px;
+     max-height: 83vh;
+    overflow-y: auto;
+    
+}
+
+.input-tarea {
+    display: block;
+    margin: 0;   
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #e6c0c0;
+    border-radius: 10px;
+    background-color: #d4edda;
+}
+
+.checkbox-tarea {
+    position: relative;
+  margin-left: 90%;
+    top: 30px;
+}
+
+
